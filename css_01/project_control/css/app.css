@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.button{
+    text-decoration: none;
+    border: 1px solid #c6c6c6;
+    padding: 10px;
+    border-radius: 10px;
+    color: #DBAFA0;
+}
+
+.button:hover{
+   font-weight: bold;
+}
+
+.button-master{
+    background-color: #49243E;
+    border: 1px solid #49243E;
+}
+
+.button-danger{
+    background-color: red;
+    border: 1px solid red;
+}
+
+table, th, td{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.3rem;
+}
+
+table{
+    width: 100%;
+}
+
+tbody > tr:nth-child(odd){
+    background-color: #DBAFA0;
+}
+
+thead > tr{
+    background-color: #BB8493;
+}
+
+tfoot > tr{
+    background-color: #ebe2e5;
+}
+
+tbody > tr:hover{
+    background-color: #cda8b3;
+    color: #000;
+}
+
+tbody > tr:{
+    text-decoration: none;
+    color: #000;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html> <!--html 5-->>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Cadastro de Pessoas</h1>
+
+    <form method="get" action="/pessoas/cadastrar"> <!--formulario, action recebe os dados do formulario-->
+
+        <div>
+
+            <label for="">Nome</label>
+            <input type="text" name="nomeDaPessoa" id="nomeDaPessoa" 
+            placeholder="Informe o nome completo" minlength="10" required value="">
+
+        </div>
+        
+        <div>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha">
+        </div>
+        <br>
+        <div>
+            <label for="Gênero"></label>
+
+            <div>
+                <input type="radio" name="genero" value="FEM" id="feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" value="MAS" id="masculino">
+                <label for="masculino">Masculino</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" value="NB" id="naobinario">
+                <label for="naobinario">Não binário</label>
+            </div>
+
+            <div>
+                <input type="radio" name="genero" value="SEMR" id="semresposta">
+                <label for="semresposta">Prefiro não responder</label>
+            </div>
+        </div>
+        <br>
+        <div>
+
+            <label>Notificações</label>
+
+            <div>
+                <input type="checkbox" name="notificacao[0]" id="email">
+                <label for="email">E-mail</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="notificacao[1]" id="whatsapp">
+                <label for="whatsapp">WhatsApp</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="notificacao[2]" id="telegram">
+                <label for="telegram">Telegram</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="notificacao[3]" id="sms">
+                <label for="sms">SMS</label>
+            </div>
+
+        </div>
+        <br>
+        <div>
+            
+            <label for="">UF</label>
+            <select name="uf" id="uf">
+
+                <option 
+                    value="0"
+                    selected
+                    disabled
+                >Selecione:</option>
+                <option value="1">Minas Gerais</option>
+                <option value="2">São Paulo</option>
+                <option value="3">Pará</option>
+                <option value="4">Bahia</option>
+                <option value="5">Rio de Janeiro</option>
+
+            </select>
+        
+        </div>
+        
+        <br>
+        <div>
+            <label for="cor">Cor padrão do perfil</label>
+            <input type="color" name="cor" id="cor">
+        
+        </div>
+        
+        <br>
+        <div>
+            <label for="data">Data de nascimento</label>
+            <input type="date" name="data" id="data">
+
+        </div>
+
+        <br>
+        <input type="submit" value="Cadastrar">
+        <button type="submit">Cadastrar (button)</button>
+
+        <input type="reset" value="Limpar">
+        <button type="reset">Limpar o form</button>
+
+    </form>
+
+    <a href="/">Voltar para raiz</a>
+    <a href="../">Voltar um nível</a>
+
+
+</body>
+</html>
