@@ -1,15 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-
+    font-family: "Poppins", sans-serif;
 }
+
+:root{
+    --sombra: #ECEBDE
+}
+
+h1{
+    text-transform: uppercase; /*tarefas ctrl alt seta baixo*/
+}
+
 
 .button{
     text-decoration: none;
-    border: 1px solid #c6c6c6;
+    border: 1px solid #030000;
     padding: 10px;
     border-radius: 10px;
-    color: #DBAFA0;
+    color: #000;
 }
 
 .button:hover{
@@ -17,13 +28,13 @@
 }
 
 .button-master{
-    background-color: #49243E;
-    border: 1px solid #49243E;
+    background-color: #A59D84;
+    border: px solid #A59D84;
 }
 
 .button-danger{
-    background-color: red;
-    border: 1px solid red;
+    background-color: #ECEBDE;
+    border: px solid #ECEBDE;
 }
 
 table, th, td{
@@ -37,23 +48,55 @@ table{
 }
 
 tbody > tr:nth-child(odd){
-    background-color: #DBAFA0;
+    background-color: #D7D3BF;
 }
 
 thead > tr{
-    background-color: #BB8493;
+    background-color: #A59D84;
 }
 
 tfoot > tr{
-    background-color: #ebe2e5;
+    background-color: #A59D84;
 }
 
 tbody > tr:hover{
-    background-color: #cda8b3;
+    background-color: #A59D84;
     color: #000;
 }
+ tbody> tr> td:nth-child(2) :hover{
+    background-color: #dcb338;
+ }
 
-tbody > tr:hover{
-    text-decoration: none;
-    color: #fff;
+ #start{
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*flex-direction: row-reverse;*/
+    /*flex-direction: column;*/
+    padding: 5px;
+    margin: 10px;
+ }
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.form-input > label{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-input > input{
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.form-input > input:focus{
+    border: 0px;
+    outline: 1px solid #A59D84;
+    background-color: var(--sombra);
 }
